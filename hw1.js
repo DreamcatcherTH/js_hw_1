@@ -18,7 +18,7 @@ const calcCash = (cash = 0) => cash.reduce((a,b) => a + b);
 
 const money = calcCash(cash);
 
-const makeBusiness({owner, director = 'Victor', cash, emp}) => {
+const makeBusiness = ({owner, director = 'Victor', cash, emp}) => {
     console.log(`We have a business. Owner: ${owner}, director: ${director}. Our budget: ${cash}. And our employers: ${emp}
     And we have a sponsors: ${sponsors}
     Note. Be careful with ${eu[0]}. It's a huge risk.`);
